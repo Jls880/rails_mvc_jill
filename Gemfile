@@ -65,3 +65,8 @@ group :development, :test do
   gem 'bcrypt'
   gem 'simplecov', require: false, group: :test
 end
+
+
+group :production do
+  gem 'pg'
+end
