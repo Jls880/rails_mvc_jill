@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <a href="#">Home</a>
+                
+                <a  href="/">Back</a>
+                
+            </div>
+        </nav>
+    </header>
+<div class="containerforshow">
+<h1 class="title1">Articles</h1>
+
+<h4 class="title2">Our blog has <%= @articles.count %> articles and counting!</h4>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li class="title3" >
+      <%= link_to article.title, article %>
+    </li>
+  <% end %>
+</ul>
+</div>
+
+
+<div class="container">
+<div class="wrapper">
+    <section class="maininarticle">
+        
+        <%= link_to "New Article", new_article_path %>
+    </section>
+
+</div>
+</div>
+
+
+
+
+
+<footer>
+<h3> Footer example </h3>
+</footer>
+</body>
+
+</html>

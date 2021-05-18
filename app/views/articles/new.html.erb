@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <a href="#">Home</a>
+                
+                <a  href="<%=articles_path %>">Back</a>
+                
+            </div>
+        </nav>
+    </header>
+
+
+<div class="containerforshow ">
+<h1 class="new1">New Article</h1>
+
+<div class="form1">
+<%= render "form", article: @article %>
+</div>
+</div>
+
+<footer>
+<h3> Footer example </h3>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+// Place all the styles related to the Homepages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+    font-family: 'Lucida Sans';
+  }
+  
+  
+  header{
+    padding: 8px 30px;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color:  #FFC9B5;
+    align-items: center;
+    list-style: none;
+  }
+  .navbar a{
+    padding: 1em;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+  }
+  
+  .navbar a:hover{
+    background-color:rgb(253, 215, 215);
+  }
+  
+  .navbar .button {
+    background-color: #fadcdc; 
+    border-radius: 5px;}
+    
+  
+  footer {
+    background-color:  #FFC9B5;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+  
+  
+  
+  
+  
+  
+  
+  .container {
+      max-width: 100%;
+      margin: 0 auto;
+      display: flex;
+      padding:0 30px;
+      flex-direction: column;
+      background-color:rgb(252, 239, 230);
+      min-height: 100vh;
+  }
+  .wrapper{
+    background-color:rgb(252, 239, 230);
+    display: flex;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+  
+  .sidebar {
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      background-color:#FFFFFF;
+      min-width: 20%;
+      flex: 1;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      margin-left: 2rem;
+  
+  }
+  
+  .sidebar ul{
+      text-decoration: none;
+      margin-top: 1rem;
+  }
+  
+  .main2 img{
+    width: 100%;
+  }
+  .main2{
+    background-color:#FFFFFF;
+      flex-direction: column;
+      min-width: 30%;
+      padding: 15px;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      margin-left: 2rem;
+      min-width: 80vh;
+      flex: 3;
+  }
+  
+  
+  .item1 {
+    order:1;
+    background: #FFB6C1;
+      padding: 5px;
+      width: 100px;
+      height: 100px;
+      margin-top: 10px;
+      line-height: 100px;
+      color: white;
+      font-weight: bold;
+      font-size: 1em;
+      text-align: center;
+  }
+  .item2 {
+    order:2;
+    background: #FFB6C1;
+      padding: 5px;
+      width: 100px;
+      height: 100px;
+      margin-top: 10px;
+      line-height: 100px;
+      color: white;
+      font-weight: bold;
+      font-size: 1em;
+      text-align: center;
+  }
+  .item3 {
+    order:3;
+    background: #FFB6C1;
+      padding: 5px;
+      width: 100px;
+      height: 100px;
+      margin-top: 10px;
+      line-height: 100px;
+      color: white;
+      font-weight: bold;
+      font-size: 1em;
+      text-align: center;
+  }
+  .item4 {
+    order:4;
+    background: #FFB6C1;
+      padding: 5px;
+      width: 100px;
+      height: 100px;
+      margin-top: 10px;
+      line-height: 100px;
+      color: white;
+      font-weight: bold;
+      font-size: 1em;
+      text-align: center;
+  }
+  
+  .flex-container {
+     
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  @media all and (max-width: 600px){
+    .text{
+        flex-direction: column;
+    }
+    .main{
+        margin-right: 0;
+        margin-bottom: 100px;
+    }
+    .sidebar{
+        margin-right: 0px;
+    }
+    .item1 {
+        order:3;
+    }
+    .item2 {
+        order:2;
+    }
+    .item3 {
+        order:1;
+    }
+    .item4 {
+        order:4;
+    }
+  }
+  
+  
+  @media all and (max-width: 800px){
+    .navbar{
+      justify-content: space-between;
+    }
+  }
+  @media all and (max-width: 600px){
+    .navbar{
+        padding: 0;
+        flex-flow: column;
+    }
+    .navbar a {
+      padding: 5px;
+      text-align: center;
+    }
+  }
+  
+  
+  
+    

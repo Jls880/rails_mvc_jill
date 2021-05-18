@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <a href="#">Home</a>
+                
+                <a  href="<%=articles_path %>">Back</a>
+                
+            </div>
+        </nav>
+    </header>
+
+
+
+
+<div class="containerforshow">
+    <div class="wrapper">
+        <aside class="sidebar">
+                <h1><%= @article.title %></h1>
+
+                <p><%= @article.body %></p>
+
+                <ul>
+            <button><%= link_to "Edit", edit_article_path(@article) %></button>
+            <button><%= link_to "Destroy", article_path(@article),
+                            method: :delete,
+                            data: { confirm: "Are you sure?" } %></button>
+                </ul>
+
+        </aside>
+        <section class="main2">
+       
+                <h2>Comments</h2>
+                <%= render @article.comments %>
+                <h2>Add a comment:</h2>
+                <%= render 'comments/form' %>
+
+        </section>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+<footer>
+<h3> Footer example </h3>
+</footer>
+</body>
+
+</html>
+

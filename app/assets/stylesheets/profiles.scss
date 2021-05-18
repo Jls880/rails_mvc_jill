@@ -1,0 +1,50 @@
+// Place all the styles related to the Profiles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.container-fluid{
+    background-color: rgb(252, 239, 230)
+
+
+}
+.title-cart{
+    color: rgb(211, 144, 0);
+}
+.first-title{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+.first-paragraph{
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 70px;
+}
+hr.style {
+	border-top: 1px solid #8c8b8b;
+	text-align: center;
+}
+.button-layout{
+    padding-bottom: 70px;
+}
+.position-absolute {
+    bottom: 0;
+  }
+
+
+  span.price {
+    float: right;
+    color: grey;
+  }
+
+  .footer {
+   
+    padding: 10px;
+    text-align: center;
+   
+  }
+  .card{
+    width: 22rem;
+  }
