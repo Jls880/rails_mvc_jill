@@ -64,9 +64,7 @@ group :development, :test do
   gem 'rexml'
   gem 'bcrypt'
   gem 'simplecov', require: false, group: :test
-end
-
-
-group :production do
   gem 'pg'
 end
+
+
